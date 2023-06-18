@@ -53,8 +53,8 @@ function handleMove(cellIndex) {
       changeColors.style.backgroundColor = 'aqua';
     }
     // Disabled board
-    const noClick = document.querySelector('#board');
-    myDiv.addEventListener('click', (e) => {
+    const noClick = document.getElementById('#board');
+    noClick.addEventListener('click', (e) => {
       e.preventDefault();
     });
   }
